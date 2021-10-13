@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>크리스피 크림 도넛</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="js/common.js">
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    html,
+    body {
+      width: 100%;
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      background-color: #00704a;
+      border-top: 40px solid #00704a;
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      width: 100%;
+      height: 800px;
+      background-position: 0 0, 10px 10px;
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+
+
+    }
+
+    .bread1 {
+      font-size: 25px;
+      width: 600px;
+      height: 600px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .bread1 h5 {
+      font-size: 30px;
+      color: #ff3838;
+    }
+
+
+    .subLogo {
+      height: 80px;
+      width: 100%;
+      font-size: 47px;
+      margin-bottom: 120px;
+      border-bottom: 5px solid #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 헤더 시작 ( 헤더안에 두개의 네비) -->
+  <header id="header">
+    <h1><a href="index.html">크리스피 크림 도넛</a></h1>
+    <!-- 첫번째 네비 -->
+    <nav id="membership">
+      <h2 class="hidden">멤버쉽 네비게이션</h2>
+      <ul>
+        <li class="goLogin login"><a href="#">로그인</a></li>
+        <li class="joinMembership login"><a href="#">회원가입</a></li>
+        <li class="voice login"><a href="#">고객의소리</a></li>
+        <li class="company login"><a href="#">윤리경영</a></li>
+        <li class="map login"><a href="#">사이트맵</a></li>
+        <li class="language login"><a href="#">English</a></li>
+      </ul>
+    </nav>
+    <!-- 두번째 네비 -->
+    <div class="gnbWrap">
+      <nav id="gnb">
+        <h2 class="hidden">메인 네비게이션</h2>
+        <ul id="gnbContent">
+          <li><a href="#">menu</a>
+            <ul class="snb mainMenu">
+              <li><a href="#">신제품/인기제품</a></li>
+              <li><a href="#">이달의메뉴</a></li>
+              <li><a href="#">도넛</a></li>
+              <li><a href="#">커피/음료</a></li>
+              <li><a href="#">아이스크림/프로즌</a></li>
+              <li><a href="#">브랜딩 제품소개</a></li>
+            </ul>
+          </li>
+          <li><a href="#">store</a>
+            <ul class="snb">
+              <li><a href="#">매장찾기</a></li>
+            </ul>
+          </li>
+          <li><a href="#">home service</a>
+            <ul class="snb">
+              <li><a href="#">홈서비스</a></li>
+            </ul>
+          </li>
+          <li><a href="#">event</a>
+            <ul class="snb">
+              <li><a href="#">진행 이벤트</a></li>
+              <li><a href="#">종료 이벤트</a></li>
+              <li><a href="#">당첨자 발표</a></li>
+              <li><a href="#">제휴 서비스</a></li>
+            </ul>
+          </li>
+          <li><a href="#">brand</a>
+            <ul class="snb">
+              <li><a href="#">도넛 극장</a></li>
+              <li><a href="#">브랜드 스토리</a></li>
+              <li><a href="#">브랜드 영상</a></li>
+              <li><a href="#">상품권 구입안내</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </li>
+          <li><a href="#">survey</a>
+            <ul class="snb">
+              <li><a href="#">설문조사</a></li>
+              <li><a href="#">설문조사 운영점</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <hr>
+  <!-- 메인 비디오 -->
+  <div id="videoWrap">
+    <div class="videoHeight">
+      <video muted autoplay loop>
+        <source src="video/mainVideo.mp4" type="video/mp4">
+        <strong>Your browse does not support the video tag</strong>
+      </video>
+      <a class="videoMenu" href="#">
+        <p>신제품</p>
+        <p>주문하기</p>
+        <p>매장찾기</p>
+        <p>이벤트</p>
+      </a>
+    </div>
+  </div>
+  <!-- 메인 시작  1 번째 페스티벌-->
+  <section id="contentWrap">
+    <h2 class="hidden">주요 메뉴</h2>
+    <section id="main1">
+      <div id="menuWrap">
+        <div class="festiver">
+          <h3>크리스피 크림 도넛 신제품 출시!</h3>
+          <p>할로윈 페스티벌!</p>
+        </div>
+        <div id="newMenuWrap">
+          <div class="newMenu">
+            <dl id="newMenu1">
+              <dt class="menu1 font">프랭크몬스터</dt>
+              <dd class="font1"> Frank Monster 2,500원<img src="images/bread1.png" width="300px" height="300px" alt="부드러운 도넛에 헤이즐넛 초코스프레드를 가득 충진하고 네온 그린아이싱과 쿠키분태, 눈모양 사인판, 초코스틱을 토핑한 도넛" /></dd>
+              <dd>부드러운 도넛에 헤이즐넛 초코스프레드를 가득 충진하고 네온 그린아이싱과 쿠키분태, 눈모양 사인판, 초코스틱을 토핑한 도넛</dd>
+            </dl>
+          </div>
+          <div class="newMenu">
+            <dl id="newMenu2">
+              <dt class="menu2 font">할로윈 위치&amp;문</dt>
+              <dd class="font1">Halloween Witch&amp;moon 2,500원<img src="images/bread2.png" width="300px" height="300px" alt="부드러운 도넛에 라즈베리필링을 가능 충진하고 단호박아이싱과 마녀빗자루사인판을 토핑한 도넛"></dd>
+              <dd>부드러운 도넛에 라즈베리필링을 가능 충진하고 <br>단호박아이싱과 마녀빗자루사인판을 토핑한 도넛</dd>
+            </dl>
+          </div>
+          <div class="newMenu">
+            <dl id="newMenu3">
+              <dt class="menu3 font">할로윈 잭오랜턴</dt>
+              <dd class="font1">Halloween jack-o-lantern 1,800원<img src="images/bread3.png" width="300px" height="300px" alt="달콤한 도넛에 단호박 아이싱과 초콜릿 아이싱을 토핑한 도넛"></dd>
+              <dd>달콤한 도넛에 단호박 아이싱과 초콜릿 아이싱을 토핑한 도넛</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 2번 섹션 신제품/인기제품-->
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/bread1-1.png" alt="크리스피크림의 가장 대표적인 도넛으로 1937년 부터 한결같은 조리법으로 만들어 지는 오리지널 글레이즈드">
+          <div class="bread1">
+            <div class="subLogo">
+              <p>크리스피 크림 인기메뉴(도넛)</p>
+            </div>
+            <h5>오리지널 글레이즈드</h5>
+            <p>original glazed<br><strong>1,500원</strong><br><br></p>
+            <p>크리스피크림의 가장 대표적 도넛으로 1937년 부터<br> 한결같은 조리법으로 만들어지는<br> 오리지널 글레이즈드</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="images/bread1-2.png" alt="달콤한 글레이즈가 토핑된 쉘도넛에 우유크림을 가득 충진하고 우유맛 젤리를 토핑하여 장식한 제품">
+          <div class="bread1">
+            <div class="subLogo">
+              <p>크리스피 크림 인기메뉴(도넛)</p>
+            </div>
+            <h5>우유크림 듬뿍 도넛</h5>
+            <p>mlik cream doughnut<br><strong>2,000원</strong><br><br></p>
+            <p>달콤한 글레이즈가 토핑된 쉘도넛에 우유크림을 가득 충진하고 우유맛 젤리를 토핑하여 장식한 제품</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="images/bread1-3.png" alt="스트로베리 잼을 가득 채운 도넛 위에 파우더 슈거가 뿌려진 도넛">
+          <div class="bread1">
+            <div class="subLogo">
+              <p>크리스피 크림 인기메뉴(도넛)</p>
+            </div>
+            <h5>프리미엄 스트로베리 필드</h5>
+            <p>premium strawberry field<br><strong>2,000원</strong><br><br></p>
+            <p>스트로베리 잼을 가득 채운 도넛 위에<br> 파우더 슈거가 뿌려진 도넛</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="images/bread1-4.png" alt="부드럽고 달콤한 오리지널 글레이즈드에 부드러운 우유크림이 가득 충진된 제품">
+          <div class="bread1">
+            <div class="subLogo">
+              <p>크리스피 크림 인기메뉴(도넛)</p>
+            </div>
+            <h5>오리지널 우유크림 필드</h5>
+            <p>original milk cream filled<br><strong>1,800원</strong><br><br></p>
+            <p>부드럽고 달콤한 오리지널 글레이즈드에<br> 부드러운 우유크림이 가득 충진된 제품</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="images/bread1-5.png" alt="로투스 크림과 스프레드, 바삭한 쿠키까지 가득 토핑한 쉘도넛">
+          <div class="bread1">
+            <div class="subLogo">
+              <p>크리스피 크림 인기메뉴(도넛)</p>
+            </div>
+            <h5>로투스 비스코프 도넛</h5>
+            <p>lotus biscoff doughnut<br><strong>2,000원</strong><br><br></p>
+            <p>로투스 크림과 스프레드<br> 바삭한 쿠키까지 가득 토핑한 쉘도넛</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="images/bread1-6.png" alt="밀크초콜릿과 다크초콜릿이 어우러진 도넛">
+          <div class="bread1">
+            <div class="subLogo">
+              <p>크리스피 크림 인기메뉴(도넛)</p>
+            </div>
+            <h5>초코홀릭</h5>
+            <p>chocoholic<br><strong>1,700원</strong><br><br></p>
+            <p>밀크초콜릿과 다크초콜릿이 어우러진 도넛</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="images/bread1-7.png" alt="오리지널 글레이즈드 위에 초콜렛 아이싱을 입힌 도넛">
+          <div class="bread1">
+            <div class="subLogo">
+              <p>크리스피 크림 인기메뉴(도넛)</p>
+            </div>
+            <h5>초콜릿 아이스드 글레이즈드</h5>
+            <p>chocolate iced glazed<br><strong>1,700원</strong><br><br></p>
+            <p>오리지널 글레이즈드 위에 <br>초콜렛 아이싱을 입힌 도넛</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="images/juice.png" alt="시즌 상품으로 달콤하고 지원하게 즐길 수 있는 단호박 라떼">
+          <div class="bread1">
+            <div class="subLogo">
+              <p>크리스피 크림 인기메뉴(음료)</p>
+            </div>
+            <h5>아이스 스윗 펌킨라떼</h5>
+            <p>ice sweet pumpkin latte<br><strong>4,200원</strong><br><br></p>
+            <p>시즌 상품으로 달콤하고 <br>시원하게 즐길 수 있는<br> 단호박 라떼</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="images/juice3.png" alt="시즌 상품으로 달콤한 메론맛의 부드러운 스무디">
+          <div class="bread1">
+            <div class="subLogo">
+              <p>크리스피 크림 인기메뉴(음료)</p>
+            </div>
+            <h5>메론 스무디</h5>
+            <p>mellon smoothies<br><strong>5,500원</strong><br><br></p>
+            <p>시즌 상품으로 달콤한 <br>메론맛의 부드러운 스무디</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- 3번 섹션 배달 메뉴 4가지 슬라이드다운 -->
+    <div id="main3">
+
+      <section id="section">
+        <figure>
+          <p>크리스피 크림 홈 서비스 </p>
+          <img src="images/homeservice.png" alt="크리스피 크림 홈서비스 안내로고">
+          <img src="images/homeservice3.png" alt="크리스피 크림 도넛이 생각날때 로고">
+          <img src="images/homeservice2.png" alt="크리스피 크림 딜리버리 홈 서비스">
+        </figure>
+        <section id="content">
+          <div class="figureWrap">
+
+            <figure>
+              <div>
+                <p>오리지날 더즌</p>
+                <img src="images/donut4.jpg" name="오리지날 글레이즈" alt="크리크피 크림 도넛 대표메뉴 오리지널 글레이즈 도넛 12개입 패키지 쫀득한 빵에 크림시럽을 두른 시그니처 메뉴">
+              </div>
+              <div>
+                <p>어쏘티드 더즌</p>
+                <img src="images/donut.jpg" name="어쏘티드 더즌" alt="크리크피 크림 도넛 인기메뉴 원하는 구성 12가지를 골라서 담을 수 있는 패키지 좋아하는 여러개 중복가능">
+              </div>
+              <div>
+                <p>할로윈 더즌</p>
+                <img src="images/donut3.jpg" name="할로윈 더즌" alt="크리크피 크림 도넛 할로윈 시즌 도넛4종 프랭크몬스터, 할로윈 위치 앤 문, 울프 몬스터, 할로윈 잭오랜턴 4가지가 기본 구성이며 나머지 8개는 임의로 골라 담을 수 있다. 할로윈 도넛은 중복불가 ">
+              </div>
+              <div>
+                <p>할로윈 하프더즌</p>
+                <img src="images/donut2.jpg" name="할로윈 하프 더즌" alt="크리크피 크림 도넛 할로윈 시즌 도넛 더즌의 6개 짜리 패키지로써 할로윈 시즌 도넛 4종 과 임의의 인기도넛 2가지 선택 가능. ">
+              </div>
+            </figure>
+          </div>
+        </section>
+      </section>
+    </div>
+    <!-- 4번째 섹션 대표 적인 6가지 브랜드 스토리 -->
+    <section id="main4">
+      <div class="brandWrap">
+        <h3>Brand Story</h3>
+        <p>크리스피 크림의 탄생부터 현재까지 77주년의 역사를 확인하세요.</p>
+        <img src="images/gift.png" width="1100px" alt="">
+      </div>
+        <div class="numberWrap">
+          <div class="number">
+            <dl class="gift">
+              <dt>도넛 극장을 통한 오감 만족</dt>
+              <dd>여러분은 도넛 극장을 통해 따듯한 오리지널 글레이즈드를 맛보기까지의 모든 과정을 체험할 수 있습니다.<br>
+                달콤한 향기, 반짝거리는 글레이즈, 방금 만들어진 도넛이 손에 닿았을 때의 그 온기, 입안에 넣었을 때의 촉촉함...<br>
+                크리스피 크림에서는 이 모든 과정을 경험할 수 있습니다.
+              </dd>
+            </dl>
+          </div>
+          <div class="number1">
+            <dl class="gift">
+              <dt>브랜드의 대한 지식 나눔</dt>
+              <dd>크리스피 크림은 도넛 극장을 통해 도넛이 만들어 지는 과정을 보실 수 있을 뿐만 아니라, 도넛교실, 커피교실을 통해<br>
+                크리스피 크림이라는 브랜드가 가진 75여 년의 역사를 여러분들과 나누고자 합니다.</dd>
+            </dl>
+          </div>
+          <div class="number2">
+            <dl class="gift">
+              <dt>크리스피 크림 매니아</dt>
+              <dd>크리스피 크림은 매체 광고를 전혀 하지 않고 오픈 전 도넛 샘플링 및 프리뷰파티, HOT NOW 네온사인이 켜졌을 때<br>
+                바로 맛볼 수 있는 따뜻한 오리지널 글레이즈드 도넛, 그리고 다양한 행사협찬을 통해 고객들을 만나왔습니다.<br>
+                이러한 과정 중에 형성된 크리스피 크림 도넛 매니아들은 바로 크리스피 크림을 현재의 모습으로 만들었습니다.</dd>
+            </dl>
+          </div>
+          <div class="number3">
+            <dl class="gift">
+              <dt>따뜻한 도넛 체험</dt>
+              <dd>HOT NOW 네온사인이 켜졌을 때 매장에 방문하시면 바로 나온 “따뜻한 오리지널 글레이즈드”를 체험하실 수 있습니다.<br>
+                입 안에 넣자마자 사르르 녹아 버리는 바로 그 맛. 기다리시는 동안 경험하실 수 있습니다.</dd>
+            </dl>
+          </div>
+          <div class="number4">
+            <dl class="gift">
+              <dt>CRS</dt>
+              <dd>Customer Relationship Specialist (고객관계전문가)<br>
+                크리스피 크림의 CRS는 기존 서비스 방식에서 탈피한 새로운 서비스를 제공합니다.<br>
+                CRS들은 고객들의 가장 가까운 곳에서 고객들의 말씀에 귀 기울이며 고객이 원하는 최고의 경험을 할 수 있도록
+                고객의 가장 가까운 곳에서 노력합니다.</dd>
+            </dl>
+          </div>
+        <div class="number5">
+          <dl class="gift">
+            <dt>더즌박스</dt>
+            <dd>크리스피 크림의 달콤한 먹는 맛과 도넛의 예쁜 모양을 보는 맛의 비밀, 바로 더즌 박스 입니다.<br>
+              어린이날, 어버이날, 발렌타인, 추석 등 특별한 날이 되면 크리스피 크림의 더즌박스도 옷을 갈아입고 여러분을 기다립니다.<br>
+              더욱 특별하게, 더욱 맛있게 크리스피 크림이 드리는 작은 선물 입니다.</dd>
+            <img src="images/gift1.png" alt="">
+          </dl>
+        </div>
+      </div>
+
+    </section>
+  </section>
+  <!-- 푸터 -->
+  <div class="footerWrap">
+    <footer id="footer">
+      <div class="addressWrap">
+        <ul class="info">
+          <li class="security"><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이메일주소 무단수집거부</a></li>
+          <li><a href="#">사이버감사실</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">공장견학</a></li>
+          <li><a href="#">직원채용공고</a></li>
+        </ul><br>
+        <p>
+          <span>법인명 : 크리스피 크림 도넛</span>
+          <span>서울시 금천구 벛꽃로 104 금천롯데타워<br> (우편번호: 08606) / 대표문의 : 02-709-1114 (가앵문의,행사안내 등)</span><br>
+          <span>사업자업호 : 106-81-23498 / 대표자 : 차우철</span><br>
+        </p>
+        <p>copyright &copy; 2013 krispy kreme doughnuts. all right reserved.</p>
+      </div>
+      <ul class="sns">
+        <li class="facebook"><a href="#">페이스북 바로가기</a></li>
+        <li class="twitter"><a href="#">트위터 바로가기</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
